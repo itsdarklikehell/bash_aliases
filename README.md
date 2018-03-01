@@ -7,7 +7,7 @@ bash <(curl -s https://github.com/itsdarklikehell/bash_aliases/install.sh)
 
 Manual install:
 
-cd
+cd ~
 
 git clone https://github.com/itsdarklikehell/bash_aliases/.bash_aliases
 
