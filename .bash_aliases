@@ -275,4 +275,4 @@ alias amzcdndel='/home/scripts/admin/cdn/purge_cdn_cache --profile amazon'
 
 ## supply list of urls via file or stdin
 alias cdnmdel='/home/scripts/admin/cdn/purge_cdn_cache --profile akamai --stdin'
-alias amzcdnmdel='/home/scripts/admin/cdn/purge_cdn_cache --profile amazon --stdi
+alias amzcdnmdel='/home/scripts/admin/cdn/purge_cdn_cache --profile amazon --stdin'
