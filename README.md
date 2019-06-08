@@ -9,6 +9,6 @@ Manual install:
 
 cd ~
 
-git clone https://github.com/itsdarklikehell/bash_aliases/.bash_aliases -o ~/.bash_aliases
+git clone https://github.com/itsdarklikehell/bash_aliases/blob/master/.bash_aliases -o ~/.bash_aliases
 
 source ~/.bash_aliases
