@@ -1,12 +1,14 @@
 #!/bin/bash
 CONFIG(){
 UPDATE="sudo apt-get update && sudo apt-get upgrade -y"
+export UPDATE
 INSTLLDEP="sudo apt-get install git colordiff htop ntop"
+export INSTLLDEP
 }
 CLONE(){
-cd
+cd || exit
 git clone https://github.com/itsdarklikehell/bash_aliases
-cd bash_aliases
+cd bash_aliases || exit
 cp $HOME/.bash_aliases $HOME/.bash_aliases_old
 cp .bash_aliases $HOME
 echo "All done, please source .bash_aliases in all off your consoles (or log out/reboot) to apply changes." 
