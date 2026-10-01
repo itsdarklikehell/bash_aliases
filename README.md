@@ -3,6 +3,7 @@
 <img src="https://img.shields.io/github/stars/itsdarklikehell/bash_aliases?style=flat-square&color=blue" alt="Stars">
 <img src="https://img.shields.io/github/forks/itsdarklikehell/bash_aliases?style=flat-square&color=green" alt="Forks">
 <img src="https://img.shields.io/github/license/itsdarklikehell/bash_aliases?style=flat-square" alt="License">
+<img src="https://img.shields.io/github/actions/workflow/status/itsdarklikehell/bash_aliases/ci.yml?branch=main&label=CI&style=flat-square" alt="CI Status">
 
 A huge collection of handy bash aliases.
 
@@ -44,7 +45,5 @@ l       # ls -CF
 MIT — zie [LICENSE](LICENSE) voor details.
 
 ## 🎥 Gource Visualization
-
-De ontwikkelhistorie van dit project in een film:
 
 <video src="https://raw.githubusercontent.com/itsdarklikehell/bash_aliases/master/gource.mp4" controls width="100%"></video>
