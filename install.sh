@@ -1,20 +1,26 @@
 #!/bin/bash
+set -euo pipefail
+
 CONFIG(){
-UPDATE="sudo apt-get update && sudo apt-get upgrade -y"
-export UPDATE
-INSTLLDEP="sudo apt-get install git colordiff htop ntop"
-export INSTLLDEP
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt-get install -y git colordiff htop ntop
 }
+
 CLONE(){
-cd || exit
-git clone https://github.com/itsdarklikehell/bash_aliases
-cd bash_aliases || exit
-cp $HOME/.bash_aliases $HOME/.bash_aliases_old
-cp .bash_aliases $HOME
-echo "All done, please source .bash_aliases in all off your consoles (or log out/reboot) to apply changes." 
-source $HOME/.bash_aliases
+    cd "$HOME"
+    if [ -d bash_aliases ]; then
+        echo "bash_aliases directory already exists. Pulling latest changes..."
+        cd bash_aliases
+        git pull
+    else
+        git clone https://github.com/itsdarklikehell/bash_aliases.git
+        cd bash_aliases
+    fi
+    cp "$HOME/.bash_aliases" "$HOME/.bash_aliases_old" 2>/dev/null || true
+    cp .bash_aliases "$HOME"
+    echo "All done, please source .bash_aliases in all of your consoles (or log out/reboot) to apply changes."
 }
+
 CONFIG
-UPDATE
-INSTLLDEP
 CLONE
