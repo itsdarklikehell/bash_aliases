@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 CONFIG(){
 UPDATE="sudo apt-get update && sudo apt-get upgrade -y"
 export UPDATE
